@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+    <!--Navigation starts-->
+    <nav>
+        <div class="navbar">
+            <a href="#" class="logo">Grace corner Takeaways</a>
+
+            <!--food menu-->
+            <div class="=hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">home</a></li>
+
+                <li>
+                    <a href="#" class="submenu-toggle">services </a>
+                    <ul class="submenu">
+                        <li><a href="#">main</a></li>
+                        <li><a href="#">drinks</a></li>
+                        <li><a href="#">special combos</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" class="submenu-toggle">Gallery</a>
+                    <ul class="submenu">
+                        <li><a href="./about.html">about</a></li>
+                        <li><a href="./contact.html">contact</a></li>
+                    </ul>
+				</li>
+			</ul>
+        </div>
+    </nav>
+    <!--navigation End-->
+
+    <!--slide show begins-->
+    <div class="slideshow-container carousalmargin">
+        <!--Full-width images with number caption text-->
+        <div class="slideshow-container carousalmargin">
+            <div class="numbertext">1 / 3</div>
+            <img src="./Images/food" style="height: 500px; width: 100%">
+            <div class="text">burger and chips</div>
+        </div>
+
+        <div class="my slide fade">
+            <div class="numbertext">2 / 3 </div>
+            <img src="fries.html.png" style="height: 500px; width: 100%;">
+            <div class="text">Fried chips</div>
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 /3</div>
+            <img src="./Images/food3.jpg" <div class="text">Caption TWO
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3 </div>
+        <img src="./Images?food3.jpg" style="height: 500px; width: 100%">
+        <div class="text"> caption Three</div>
+    </div>
+
+    <!--next and previous bottons-->
+    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlide(1)">&#10095</a>
+    </div>
+    <br>
+
+    <!--The dots/circcles-->
+    <div>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+
+    </div>
+    <!--slide show Ends-->
+
+</body>
+<footer>
+    <div class="footer-logo">
+        <h2 Grace Corner Takeaways></h2>
+        <p>Great Taste Around the Corner</p>
+    </div>
+
+    <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">food</a></li>
+            <li><a href="#">drinks</a></li>
+            <li><a href="#">combos b</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-contacts">
+        <h3>contact us</h3>
+        <p>03 Pluto Drive, Pinetown</p>
+        <p>067259556</p>
+        <p>info@GraceCornerTakeaways</p>
+        <div class="footer socials">
+            <a href="#" instagram></a>
+            <a href="#" twitter></a>
+            <a href="#" facebook></a>
+        </div>
+    </div>
+
+    <div class=" footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe for 50% off</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+</footer>
+
+</html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>GRACE CORNER TAKEAWAY/GREAT TASTE AROUND THE CORNER/>
+  <meta name="description" content="GRACE CORNER TAKEAWAY,AMAZING FOOD AND FRESH NEW FLAVOURS!"/>
+  <meta name="keywords" content="GRACE CORNER TAKEAWAY OFFERS BIG DEAL COMBOS!"/>
+  <meta name="author" content="Grace corner Takeaway"/>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.gracecornertakeaways.com"/>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "takeaway",
+    "name": "Grace corner Takeays",
+    "description": "Amazing food, big combos and fresh new delicious flavours.",
+    "url": "https://www.gracecornertakeaway.com",
+    "telephone": "+2706027551",
+    "email": "info@gracecornertakeaway.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "03 PLUTO DRIVE"/,
+      "addressLocality": "Pinetown"/,
+      "addressCountry": "SA"/,
+    },
+    "priceRange": "R"
+  }
+  </script>
+
+  <link rel="stylesheet" href="./css/stylesheet.css">
+<script>document.addEventListener('DOMContentLoaded', function() {
+						if (document.documentElement.hasAttribute('lang')) return;
+						document.documentElement.setAttribute('lang', 'en-gb'); 						
+					});</script><script>document.addEventListener('DOMContentLoaded', function() {
+						if (document.head.querySelector('title')) return;
+						var handleAppendTitle = function(evt) {
+							if (!evt || !evt.data) return;
+
+							try {
+								var data = JSON.parse(evt.data);
+								if (data.handler !== 'd2l.iframe.requestPageTitle' || !data.pageTitle) return;
+
+								window.removeEventListener('message', handleAppendTitle, false);
+
+								var titleElm = document.createElement('title');
+								titleElm.textContent = data.pageTitle;
+								document.head.appendChild(titleElm);
+							} catch (e) {}	
+						};
+
+						window.addEventListener('message', handleAppendTitle, false);
+						window.parent.postMessage(JSON.stringify({ handler: 'd2l.iframe.requestPageTitle' }), '*');
+					});</script><script>window.addEventListener('message', function(event) { 
+					if( !event.data ) {
+						return;
+					}
+
+					let params;
+					try {
+						params = JSON.parse( event.data );
+					}
+					catch {
+						return;
+					}
+					if( !params.subject || params.subject !== 'lti.frameResize' ) {
+						return;
+					}
+
+					const MAX_FRAME_HEIGHT = 10000;
+					if( !params.height || params.height < 1 || params.height > MAX_FRAME_HEIGHT ) {
+						console.warn( 'Invalid height value received, aborting' );
+						return;
+					}
+					const el = document.getElementsByTagName( 'iframe' );
+					for ( let i=0; i < el.length; i++ ) {
+						if( el[i].contentWindow === event.source ) {
+							el[i].style.height = params.height + 'px';
+
+							console.info( 'Setting iFrame height to ' + params.height );
+
+							if( el[i].getAttribute('lockwidth') !== 'true'){
+								el[i].style.width = '100%';
+								console.info( 'Setting iFrame width to 100%' );
+							}
+						}
+					}
+				});</script><script src="https://s.brightspace.com/lib/bsi/2026.5.295/unbundled/embeds.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+					window.D2L.EmbedRenderer.renderEmbeds(document.body);
+				});</script><script src="https://s.brightspace.com/lib/bsi/2026.5.295/unbundled/mathjax.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math, .d2l-element, .d2l-cplus-layout') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						document.querySelectorAll('math mmultiscripts > none').forEach(elm => {
+							const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+							elm.replaceWith(mrow);
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							outputScale: 1.5,
+							renderLatex: true,
+							enableMML3Support: false
+						});
+					}
+				});</script><script src="https://s.brightspace.com/lib/bsi/2026.5.295/unbundled/prism.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code, true);
+					});
+				});</script><script>
+					if (window.frameElement !== null && !document.documentElement.hasAttribute('data-oslo')) {
+						const osloSettings = {"batch":"/d2l/api/oslo/batch?languageId=11","collection":"/d2l/api/oslo/collection?languageId=11","version":"W/\"20.26.5.22756.0\""};
+						document.documentElement.setAttribute('data-oslo', JSON.stringify(osloSettings));
+					}
+				</script><script src="https://s.brightspace.com/lib/bsi/2026.5.295/unbundled/creator.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', async () => {
+					const activities = [];
+					const practices = [];
+					const allPractices = document.querySelectorAll('.d2l-practice');
+					const elements = document.querySelectorAll('.d2l-element');
+					let layouts = [...document.querySelectorAll('.d2l-cplus-layout')];
+					const tables = document.querySelectorAll('table');
+					const contentStylerStyleLinks = document.querySelectorAll('head > link[href="https://templates.lcs.brightspace.com/lib/assets/css/styles.min.css"]');
+					const contentStylerOverides = document.querySelectorAll('head > link[href^="/d2l/le/contentstyler/"][data-override="override"]');
+
+					layouts = layouts.filter((layout) => layout.closest('.d2l-element.mceNonEditable') === null);
+
+					for (const practice of allPractices) {
+						const activityContainer = practice.hasAttribute('data-d2l-activity-href');
+						if (activityContainer) {
+							activities.push(practice);
+						}
+						else {
+							practices.push(practice);
+						}
+					}
+
+					if (layouts.length > 0) {
+						window.D2L.Creator.convertLayouts(layouts);
+					}
+					if (elements.length > 0) {
+						window.D2L.Creator.convertElements(elements, 6606, '/content/');
+					}
+					if (activities.length > 0) {
+						window.D2L.Creator.convertPracticeActivities(activities, 6606, '/content/');
+					}
+					if (practices.length > 0) {
+						window.D2L.Creator.convertPractices(practices, 6606, '/content/');
+					}
+					if (contentStylerStyleLinks.length > 0 && contentStylerOverides.length > 0 && tables.length > 0) {
+						window.D2L.Creator.wrapTables(tables);
+					}
+				});</script><script>function lti_launch( vars, target ) {
+					var query = '';
+					var new_tab = false;
+
+					for(var key in vars) {
+						if(query.length == 0) {
+							query += '?' + key + '=' + encodeURIComponent(vars[key]);
+						}
+						else {
+							query += '&' + key + '=' + encodeURIComponent(vars[key]);
+						}
+					}
+
+					var url = '/d2l/customization/pearsonlti/6606/Launch' + query;(target == '_blank') ? window.open( url, '_blank' ) : location.replace( url );}</script></head>
+
+<body>
+  <!--Navigation Starts-->
+  <nav>
+    <div class="navbar">
+      <a href="./index.html" class="logo">Grace corner takeaway"/>
+
+      <div class="food"="food"  aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <a href="./services.html" class="submenu-toggle" aria-haspopup="true">Services ▾</a>
+          <ul class="submenu">
+            <li><a href="#">burgers</a></li>
+            <li><a href="#">fries</a></li>
+            <li><a href="#">drinks</a></li>
+          </ul>
+        </li>
+       
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--Navigation Ends-->
+
+  <!--Slide Show Begins-->
+  <div class="slideshow-container carousalmargin" role="region" aria-label="takeawayslideshow>
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./Img/.burger.html"style="height:500px;width:100%;" alt="grace corner takeaway burger">
+      <div class="text">Welcome to Grace corner takeaways</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./Img/cheese_friesjpg" style="height:500px;width:100%;" alt="cheese fries">
+      <div class="text">say cheese</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <imgsrc="mg/meltingcheeseheavenjpg" style="height:500px;width:100%;" alt="melting cheese heaven"/>
+      <div class="text">melting your heart with cheese</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" aria-label="Next slide">&#10095;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)" aria-label="Slide 1"></span>
+    <span class="dot" onclick="currentSlide(2)" aria-label="Slide 2"></span>
+    <span class="dot" onclick="currentSlide(3)" aria-label="Slide 3"></span>
+  </div>
+  <!--Slide Show Ends-->
+
+  <h1>Grace Corner Takeaway Offers</h1>
+  <p>These are the offers that we provide!</p>
+  <br>
+
+
+    <div class="column">
+      <div class="card">
+        <img src="./Img/h2.jpg" alt="Food specials with drinks at Grace corner takeaway" width="500">
+        <div class="container">
+          <h2>food specials</h2>
+          <p class="title">single special meals</p>
+          <p>specials made in heaven</p>
+          <p>Get a free drink with your meal when purchasing a fully loaded burger </p>
+          <p><button class="button" onclick="window.location.href='./Contact.html'">See More</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="./Img/img_7270jpg" alt="Big family food deals" width="500">
+        <div class="container">
+          <h2>family style</h2>
+          <p class="title">combs for the family</p>
+          <p>contact us to host family events and make magical moments together</p>
+          <p><button class="button" onclick="window.location.href='./Contact.html'">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <footer>
+    <div class="footer-logo">
+      <h2>Grace Corner Takeaways</h2>
+      <p>Amazing food, big combos and fresh new delicious flavours.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">burgers</a></li>
+        <li><a href="#">drinks</a></li>
+        <li><a href="#">fries</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 03 pluto drive, pinetown, KZN</p>
+      <p>+27060725659</p>
+      <p>✉️ info@gracecornertakeaway.com</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Website">🌐</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="Instagram">📸</a>
+      </div>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for special offers and combs.</p>
+      <div class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" required aria-label="Newsletter email">
+        <button type="button" onclick="handleNewsletterSubmit()">Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./javascript/script.js"></script>
+</body>
+</html>
